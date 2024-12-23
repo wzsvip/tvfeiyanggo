@@ -2,6 +2,8 @@ name: IPTV-Go
 
 on:
   push:
+    schedule:
+    - cron: '*/5 * * * *'
     branches: ["main"]
     paths:
       - '**.go'    
