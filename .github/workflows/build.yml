@@ -82,3 +82,8 @@ jobs:
         with:
           name: allinone_windows_amd64
           path: Golang/allinone_windows_amd64.exe
+
+              - name: Push changes
+      run: git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
